@@ -5,7 +5,7 @@
 }
 
 :root {
-  --text-color: #FFF;
+  --text-color: #fff;
   --bg-url: url(./assets/bg-mobile.jpg);
   --strok-color: rgba(255, 255, 255, 0.5);
   --surface-color: rgba(255, 255, 255, 0.05);
@@ -37,11 +37,12 @@ body {
 
 body * {
   font-family: "Inter", serif;
-  color: var(--text-color)
+  color: var(--text-color);
 }
 
 #container {
-  width: 360px;
+  width: 100%;
+  max-width: 588px;
   margin: 56px auto 0px;
   padding: 0 24px;
 }
@@ -71,17 +72,17 @@ body * {
 }
 
 #switch button {
- width: 32px;
- height: 32px;
- background: #FFF var(--switch-bg-url) no-repeat center;
- border: 0;
- border-radius: 50%;
+  width: 32px;
+  height: 32px;
+  background: #fff var(--switch-bg-url) no-repeat center;
+  border: 0;
+  border-radius: 50%;
 
- position: absolute;
- top: 50%;
- left: 0;
- z-index: 1;
- transform: translateY(-50%);
+  position: absolute;
+  top: 50%;
+  left: 0;
+  z-index: 1;
+  transform: translateY(-50%);
 }
 
 .light #switch button {
